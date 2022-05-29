@@ -1,5 +1,6 @@
-from src.requester import Requester
+from src.requester import get_html
 
 
 if __name__ == "__main__":
-    requester = Requester()
+    url = "https://github.com/psf"
+    get_html(url)

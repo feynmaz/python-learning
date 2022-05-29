@@ -1,7 +1,8 @@
+import requests
 
-class Requester:
-    def __init__(self):
-        pass
 
-    def get_html(self, url: str) -> str:
-        ...
+def get_html(url: str):
+    response = requests.get(url)
+    content = response.text
+    print(content)
+
